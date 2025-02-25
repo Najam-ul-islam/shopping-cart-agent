@@ -1,0 +1,21 @@
+[project]
+name = "shoping-cart-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Muhammad Najam Ul Islam", email = "26120402+Najam-ul-islam@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "crewai[tools]>=0.102.0",
+    "fastapi>=0.115.8",
+    "sqlmodel>=0.0.22",
+]
+
+[project.scripts]
+shoping-cart-agent = "shoping_cart_agent:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
